@@ -1,0 +1,171 @@
+#main {
+    margin-top: 15px;
+    .pull-left {
+        float: left;
+    }
+    .pull-right {
+        float: right;
+    }
+    .panel {
+        margin-bottom: 13px;
+        .header {
+            padding: 10px;
+            background-color: #f6f6f6;
+            border-radius: 3px 3px 0 0;
+        }
+        .inner {
+            padding: 10px;
+            border-radius: 0 0 3px 3px;
+            background-color: #fff;
+            a {
+                color: #778087;
+            }
+        }
+        .cell {
+            background-color: #fff;
+            border-top: 1px solid #f0f0f0;
+            position: relative;
+            padding: 10px;
+            line-height: 28px;
+            font-size: 14px;
+            a {
+                color: #333;
+            }
+            .user-avator {
+                img {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 3px;
+                }
+            }
+            .reply_count {
+                width: 70px;
+                display: inline-block;
+                text-align: center;
+            }
+            .count_of_replies {
+                color: #9e78c0;
+            }
+            .count_seperator {
+                margin: 0 -3px;
+                font-size: 10px;
+            }
+            .count_of_visits {
+                font-size: 10px;
+                color: #b4b4b4;
+            }
+            .last_time {
+                .user_small_avatar {
+                    height: 18px;
+                    width: 18px;
+                    vertical-align: middle;
+                    margin-right: 7px;
+                    border-radius: 3px;
+                }
+                .last_active_time {
+                    text-align: right;
+                    min-width: 50px;
+                    display: inline-block;
+                    white-space: nowrap;
+                }
+            }
+            .topic_title_wrapper {
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                .put_top {
+                    background: #80bd01;
+                    padding: 2px 4px;
+                    color: #fff;
+                    font-size: 12px;
+                    border-radius: 3px;
+                }
+                .topic_title {
+                    max-width: 70%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-size: 16px;
+                }
+                .topic_title:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        .cell:hover {
+            background-color: #f6f6f6;
+        }
+    }
+    .sideBar {
+        width: 290px;
+        float: right;
+        .header {
+            color: #51585c;
+            border-radius: 3px 3px 0 0;
+        }
+        .panel {
+            .header {
+                background-color: #f6f6f6;
+            }
+            .inner {
+                #create-topic-btn {
+                    background-color: #80bd01;
+                    border-radius: 3px;
+                    display: inline-block;
+                    font-size: 14px;
+                    color: #fff;
+                    padding: 3px 10px;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+    .content {
+        margin-right: 305px;
+        .header {
+            .topic-tab {
+                margin: 0 10px;
+                color: #80bd01;
+                cursor: pointer;
+            }
+            .current-tab {
+                background-color: #80bd01;
+                color: #fff;
+                padding: 3px 4px;
+                border-radius: 3px;
+            }
+        }
+        .inner {
+            padding: 0;
+        }
+        .topic {
+            padding: 10px;
+            .topic_content {
+                p {
+                    font-size: 15px;
+                    line-height: 30px;
+                }
+                a {
+                    color: #08c;
+                }
+                .markdown-text:first-child {
+                    font-size: 26px;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+    .breadcrumb {
+        padding: 0;
+        margin: 0;
+        border: none;
+        background: 0 0;
+        li {
+            display: inline-block;
+        }
+        .active {
+            color: #999;
+        }
+    }
+}
